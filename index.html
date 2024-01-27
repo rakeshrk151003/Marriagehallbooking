@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Marriage Hall</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body{
+            margin:0;
+            background-image: url(backimg.jpeg) ;
+            height: 100%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+    .quote
+        {
+            text-align: center;
+            font-size: x-large;
+            color: white;
+            border: 3px solid white;
+            background-color: blue;
+            border-width: 3px;
+            border-radius: 6px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .q2
+        {
+            text-align: center;
+            font-size: x-large;
+            color: white;
+            width: 300px;
+            border: 15px solid white;
+            padding: 30px;
+            background-color: blue;
+            margin-left: 37%;
+            margin-top: 5%;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .navbar-custom{
+          background-color: blue;
+        
+        
+      }
+      .navbar-custom1{
+        color: blue;
+      }
+      .active{
+        color:blue;
+      }
+        
+  </style>
+  <script type = "text/javascript">
+	
+	function moveone()
+	{
+	document.getElementById("move").innerHTML ="4.2 Ratings";
+	}
+
+	function leaveone()
+	{
+	document.getElementById("move").innerHTML ="PYMAHAL";
+	}
+  function moveone1()
+	{
+	document.getElementById("move1").innerHTML ="4.5 Ratings";
+	}
+
+	function leaveone1()
+	{
+	document.getElementById("move1").innerHTML ="LEMERIDIAN";
+	}
+	window.addEventListener( "load", start, false );
+    
+    function start()
+    {
+    document.getElementById("picture").addEventListener("mouseover", over, false );
+    document.getElementById("picture").addEventListener("mouseout", out, false );
+    document.getElementById("picture1").addEventListener("mouseover", over1, false );
+    document.getElementById("picture1").addEventListener("mouseout", out1, false );
+    document.getElementById("move").addEventListener("mousemove", moveone, false );
+	document.getElementById("move").addEventListener("mouseout", leaveone, false );
+  document.getElementById("move1").addEventListener("mousemove", moveone1, false );
+	document.getElementById("move1").addEventListener("mouseout", leaveone1, false );
+	
+    }
+  
+    function over()
+    {
+     document.getElementById("picture").setAttribute( "src", "lemeridiandetails.png")
+     document.getElementById("picture").setAttribute("width","50%")
+    }
+    function over1()
+    {
+     document.getElementById("picture1").setAttribute( "src", "Elevation night time 3.jpg")
+     document.getElementById("picture1").setAttribute("width","100%")
+    }
+  
+    function out()
+    {
+    document.getElementById("picture").setAttribute( "src", "le meridian.jpg");
+    document.getElementById("picture").setAttribute("width","100%")
+    }
+    function out1()
+    {
+    document.getElementById("picture1").setAttribute( "src", "images.jpg");
+    document.getElementById("picture1").setAttribute("width","100%")
+    }
+    
+  </script> 
+</head>
+<body>
+    <img src="logo1..svg" width="180" height="110">
+<nav class="navbar navbar-inverse navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Menu</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="aboutus.html">AboutUs</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Hall <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="minoccupency.html">Minimumoccupency</a></li>
+            <li><a href="maxoccupency.html">Mediumoccupency</a></li>
+            <li><a href="maxoccupency.html">Maximumoccupency</a></li>
+          </ul>
+        </li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li><a href="dummy.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<p class="quote"> "YOUR FUNCTION IS OUR'S"</p>
+    <div class="section">
+      <div class="col-xs-12">
+        <div class="text">
+             <h1 id ="move" onMousemove="moveone()">PYMAHAL</h1><br/>
+             <p>
+                We provide a complete range of wedding services and a perfect setting with staffs providing service of supreme quality will ensure that you have a classical wedding. If you need outstanding services in Coimbatore, we are the right pay
+             </p>
+        </div>
+      </div>
+      <div>
+          <img class="img-responsive img-rounded" src="images.jpg" id="picture1">
+      </div>
+    </div>
+    <div class="col-xs-8 col-lg-12">
+    <p class="q2">
+        "WE HAVE THE BEST FOR YOU"
+      </p>
+    </div>
+    <div class ="section2 col-xs-12">
+      <div class="col-xs-12">
+        <img class="img-responsive img-rounded" src="le meridian.jpg" id ="picture" width="100%" height="250px">
+      </div>
+        <div class="text2">
+          
+            <h1 id="move1">LEMERIDIAN</h1>
+            <p>Location In the city
+                Cuisine vegetarian, non-vegetarian
+                Type of cuisine Multi Cuisine
+                Advance payment 25% and the rest amount to be paid 1 week before the event. Booking amount is non refundable.
+                Decoration policy Outside decorator only
+                Payment methods Cash, Bank transfer, Credit/debit card, Cheque
+                Guests rooms 254 with AC</p>
+        
+        </div>
+    </div>
+
+
+</body>
+</html>
